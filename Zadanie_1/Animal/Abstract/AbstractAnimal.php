@@ -78,6 +78,6 @@
 		 */
 		protected function brush(): string
 		{
-			return "$this ma teraz lśniące futerko";
+			return "$this ma teraz lśniące futerko.<br>";
 		}
 	}
