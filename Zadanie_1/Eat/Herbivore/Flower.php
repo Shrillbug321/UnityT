@@ -2,7 +2,7 @@
 
 	namespace Eat\Herbivore;
 
-	require_once "Zadanie_1/Eat/Abstract/HerbEat.php";
+	require_once __DIR__."/../Abstract/HerbEat.php";
 	use Eat\Abstract\HerbEat;
 
 	class Flower extends HerbEat

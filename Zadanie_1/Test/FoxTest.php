@@ -6,8 +6,8 @@
 	use Eat\Carnivore\Meat;
 	use PHPUnit\Framework\TestCase;
 
-	require_once "Zadanie_1\Animal\Carnivore\Fox.php";
-	require_once "Zadanie_1\Eat\Carnivore\Meat.php";
+	require_once __DIR__."/../Animal/Carnivore/Fox.php";
+	require_once __DIR__."/../Eat/Carnivore/Meat.php";
 	class FoxTest extends TestCase
 	{
 		public function setUp(): void
@@ -19,7 +19,7 @@
 		}
 
 		public function testBrush() {
-			$this->assertEquals("Lis TestFox ma teraz lśniące futerko", $this->fox->brush());
+			$this->assertEquals("Lis TestFox ma teraz lśniące futerko.<br>", $this->fox->brush());
 		}
 
 		public function testSetName() {

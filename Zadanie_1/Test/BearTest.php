@@ -7,9 +7,9 @@
 	use Eat\Herbivore\Flower;
 	use PHPUnit\Framework\TestCase;
 
-	require_once "Zadanie_1\Animal\Omnivore\Bear.php";
-	require_once "Zadanie_1\Eat\Carnivore\Meat.php";
-	require_once "Zadanie_1\Eat\Herbivore\Flower.php";
+	require_once __DIR__."/../Animal/Omnivore/Bear.php";
+	require_once __DIR__."/../Eat/Carnivore/Meat.php";
+	require_once __DIR__."/../Eat/Herbivore/Flower.php";
 	class BearTest extends TestCase
 	{
 		public function setUp(): void
@@ -21,7 +21,7 @@
 		}
 
 		public function testBrush() {
-			$this->assertEquals("Niedźwiedź TestBear ma teraz lśniące futerko", $this->bear->brush());
+			$this->assertEquals("Niedźwiedź TestBear ma teraz lśniące futerko.<br>", $this->bear->brush());
 		}
 
 		public function testSetName() {

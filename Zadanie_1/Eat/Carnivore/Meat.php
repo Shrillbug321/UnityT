@@ -1,7 +1,7 @@
 <?php
 
 	namespace Eat\Carnivore;
-	require_once "Zadanie_1/Eat/Abstract/CarnEat.php";
+	require_once __DIR__."/../Abstract/CarnEat.php";
 
 	use Eat\Abstract;
 
