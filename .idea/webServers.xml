@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="30b0c91b-a7df-470b-849b-836daa6188b0" name="Upload" url="http://localhost">
+        <fileTransfer mountedRoot="D:\xampp\htdocs\UnityT" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

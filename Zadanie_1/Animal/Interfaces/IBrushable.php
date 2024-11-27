@@ -1,8 +1,12 @@
-﻿<?php
+<?php
 
 namespace Animal\Interfaces;
 
 interface IBrushable
 {
-    public function brush();
+	/**
+	 * Brushing method
+	 * @return string information about brushing
+	 */
+    public function brush(): string;
 }

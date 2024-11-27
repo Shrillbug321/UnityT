@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"Animal\\Carnivore\\FoxTest::testGetName":0,"Animal\\Carnivore\\FoxTest::testBrush":0,"Animal\\Carnivore\\FoxTest::testSetName":0,"Animal\\Carnivore\\FoxTest::testGetSpecies":0,"Animal\\Carnivore\\FoxTest::test__toString":0,"Animal\\Carnivore\\FoxTest::testFeed":0,"Test\\ZooTest::testAddAnimal":0,"Test\\ZooTest::testShowAnimals":0}}

@@ -1,51 +1,83 @@
-﻿<?php
+<?php
 
-namespace Animal\Abstract;
+	namespace Animal\Abstract;
+	require_once __DIR__ . "/../Interfaces/IBrushable.php";
 
-abstract class AbstractAnimal
-{
-    private string $name;
-    private string $species;
+	/**
+	 * Abstract class for all's animals
+	 * */
+	abstract class AbstractAnimal
+	{
+		/**
+		 * @var string animal name
+		 */
+		private string $name;
 
-/*    public function feed(): string
-    {
-        return $this->__toString()." jest karmiony"; 
-    }*/
+		/**
+		 * @var string animal species
+		 */
+		private string $species;
 
-    public function __toString()
-    {
-        return "$this->species $this->name";
-    }
+		/**
+		 * @param string $name name of created animal
+		 */
+		public function __construct(string $name)
+		{
+			$this->setName($name);
+			return $this;
+		}
 
-    /**
-     * @return mixed
-     */
-    public function getName(): string
-    {
-        return $this->name;
-    }
+		/**
+		 * @return string species and name of animal
+		 */
+		public function __toString()
+		{
+			return "$this->species $this->name";
+		}
 
-    /**
-     * @param mixed $name
-     */
-    public function setName(string $name):void
-    {
-        $this->name = $name;
-    }
+		/**
+		 * @return string
+		 */
+		public function getName(): string
+		{
+			return $this->name;
+		}
 
-    /**
-     * @return mixed
-     */
-    public function getSpecies(): string
-    {
-        return $this->species;
-    }
+		/**
+		 * @param string $name
+		 * @return AbstractAnimal
+		 */
+		public function setName(string $name): AbstractAnimal
+		{
+			$this->name = $name;
+			return $this;
+		}
 
-    /**
-     * @param mixed $species
-     */
-    public function setSpecies(string $species):void
-    {
-        $this->species = $species;
-    }
-}
+		/**
+		 * @return string
+		 */
+		public function getSpecies(): string
+		{
+			return $this->species;
+		}
+
+		/**
+		 * @param string $species
+		 * @return AbstractAnimal
+		 */
+		protected function setSpecies(string $species): AbstractAnimal
+		{
+			$this->species = $species;
+			return $this;
+		}
+
+		/**
+		 * Method implementing brushing.
+		 * Only available externally if the extending class implements the IBrushable interface.
+		 * @return string
+		 */
+		protected function brush(): string
+		{
+			return "$this ma teraz lśniące futerko";
+		}
+	}
